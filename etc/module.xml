@@ -3,6 +3,7 @@
         xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
     <module name="BroCode_ImageQueueOptimizer">
         <sequence>
+            <module name="Magento_MessageQueue"/>
             <module name="BroCode_ImageOptimizer"/>
         </sequence>
     </module>

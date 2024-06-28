@@ -1,11 +1,23 @@
 {
   "name": "brocode/module-image-optimizer-queue",
   "version": "0.0.1",
-  "description": "N/A",
+  "license": ["MIT"],
+  "authors": [
+    {
+      "name": "Benjamin Rosenberger",
+      "email": "bensch.rosenberger@gmail.com"
+    }
+  ],
+  "description": "Magento 2 module adaption for generating asynchron messages for image optimization, based on internal Mysql Queue",
   "type": "magento2-module",
   "require": {
-    "magento/framework": "*",
     "brocode/module-image-optimizer": "*"
+  },
+  "suggest": {
+    "brocode/module-image-optimizer-webp": "Adds the possibility to convert images to WEBP format",
+    "brocode/module-image-optimizer-avif": "Adds the possibility to convert images to AVIF format",
+    "brocode/module-image-optimizer-queue": "Adds the possibility to optimize images asynchronously with the internal Mysql queue",
+    "brocode/module-image-optimizer-amqp": "Adds the possibility to optimize images asynchronously with the internal Amqp (RabittMQ) queue"
   },
   "autoload": {
     "files": [
@@ -14,5 +26,11 @@
     "psr-4": {
       "BroCode\\ImageQueueOptimizer\\": ""
     }
-  }
+  },
+  "funding": [
+    {
+      "type": "By me a coffee",
+      "url": "https://www.buymeacoffee.com/brosenberger"
+    }
+  ]
 }
