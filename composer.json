@@ -1,0 +1,18 @@
+{
+  "name": "brocode/module-image-optimizer-queue",
+  "version": "0.0.1",
+  "description": "N/A",
+  "type": "magento2-module",
+  "require": {
+    "magento/framework": "*",
+    "bro-code/module-image-optimizer": "*"
+  },
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "BroCode\\ImageQueueOptimizer\\": ""
+    }
+  }
+}
