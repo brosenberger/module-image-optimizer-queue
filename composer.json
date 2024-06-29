@@ -1,6 +1,6 @@
 {
   "name": "brocode/module-image-optimizer-queue",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "license": ["MIT"],
   "authors": [
     {
@@ -11,7 +11,7 @@
   "description": "Magento 2 module adaption for generating asynchron messages for image optimization, based on internal Mysql Queue",
   "type": "magento2-module",
   "require": {
-    "brocode/module-image-optimizer": "*"
+    "brocode/module-image-optimizer": "^1.0"
   },
   "suggest": {
     "brocode/module-image-optimizer-amqp": "Adds the possibility to optimize images asynchronously with the internal Amqp (RabittMQ) queue"
